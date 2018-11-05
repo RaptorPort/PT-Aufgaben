@@ -1,0 +1,4 @@
+Aufgabe 1)
+Das Program funktioniert so nicht.
+l muss explizit zu int gecastet werden "(int)l", da long größer als int ist.
+Also könnte eine große long Zahl nicht in ein int passen. Deswegen müssen wir auch explizit casten!
