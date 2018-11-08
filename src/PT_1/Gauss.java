@@ -6,7 +6,7 @@ public class Gauss {
 	/**
 	 * The Programm takes user input for a NxN Matrix and a 1xN Matrix.
 	 * Sorting and applying of Gauﬂ 
-	 * The resulting X-Matrix is shown in the console. 
+	 * The resulting X-Matrix is printed into the console. 
 	 * <p>
 	 * @author Nico Meiﬂen
 	 * 
@@ -50,7 +50,7 @@ public class Gauss {
 	 * Swaps two rows in an Array
 	 * 
 	 * @param Array 	Input Array
-	 * @param biggestcolumn Place of the row that should be placed in the first column
+	 * @param biggestcolumn row that will be placed in the first column
 	 * @param column Place ??
 	 * @return a copy of the original array with the two rows swapped
 	 */
