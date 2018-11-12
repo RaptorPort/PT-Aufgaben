@@ -14,10 +14,12 @@ public class monthSummary {
 		 Calendar calendar = new GregorianCalendar(TimeZone.getDefault());
 		 Date trialTime = new Date();
 		 calendar.setTime(trialTime);
+		 
+		 System.out.println();
 		  
-		 for (int w = 1, t = 2 - calendar.get(Calendar.DAY_OF_WEEK) + calendar.getFirstDayOfWeek(); t <= calendar.getActualMaximum(Calendar.DAY_OF_MONTH); w++) {
+		 for (int w = 1, t = 2 - calendar.getMinimalDaysInFirstWeek(); t <= calendar.getActualMaximum(Calendar.DAY_OF_MONTH); w++) {
 			 for (int i = 1; i <= 7; i++, t++) {
-				 if (calendar.get(Calendar.DAY_OF_WEEK) - calendar.getFirstDayOfWeek() <= i || w != 1) {
+				 if (calendar.getMinimalDaysInFirstWeek() <= i || w != 1) {
 					 if (t <= calendar.getActualMaximum(Calendar.DAY_OF_MONTH) )
 						 if (calendar.get(Calendar.DAY_OF_MONTH) == t)
 							 System.out.print(t + "*\t");
