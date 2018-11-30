@@ -1,0 +1,9 @@
+Aufgabe 1)
+1. Warum ist meineMethode() in der Subklasse sichtbar?
+Die Subklasse erbt alle Methoden der  Superklasse
+
+2. Was können Sie tun, um zu erreichen, dass diese Methode dort unsichtbar ist, ohne der Klasse oder der Methode einen anderen Zugriffsmodifikator zu geben?
+Wir erstellen unsere eigene Methode "meineMethode()" in Subklasse, mit der Sichtbarkeit auf package -> static void meineMethode()
+
+Aufgabe 2)
+Das Java-Archiv des Pakets "Verwaltung" können wir mit "java -jar PT-Projekt.jar" in der CMD ausführen.
