@@ -5,7 +5,7 @@ import java.lang.reflect.Modifier;
 import java.lang.reflect.TypeVariable;
 import java.util.Scanner;
 
-public class Klassenbrowser {
+public class KlassenbrowserMY {
 
 	public static void main(String[] args) {
 		//Scanner scan = new Scanner(System.in);
@@ -31,12 +31,9 @@ public class Klassenbrowser {
 				
 				
 			}
-			System.out.println(c.getConstructor(null));
+			System.out.println();
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
-		} catch (NoSuchMethodException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} catch (SecurityException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,5 +1,7 @@
 package PT_6;
 
+import java.sql.Date;
+
 public class test {
 
 	public static void main(String[] args) {
@@ -12,21 +14,15 @@ public class test {
 				"assume","cultural","because","act","century","according","appear","a","anyone","argue","decade","deal","apply","cell","community","away",
 				"beat","cancer","brother","bank","arrive","again","condition","care","collection","after","ball","attention","current","agree","black","debate",
 				};
+		Date da[] = {new Date(1785,1,1), new Date(1,1,1999), new Date(3,3,2015)};
 		
 		genericSort t = new genericSort();
-		System.out.println(t.arrayToString(l));
-		t.sort(l);
-		System.out.println(t.arrayToString(l));
 		
-		System.out.println(t.arrayToString(d));
-		t.sort(d);
-		System.out.println(t.arrayToString(d));
-		
-		System.out.println(t.arrayToString(s));
-		t.sort(s);
-		System.out.println(t.arrayToString(s));
-		
+		t.printSortprint(l);
+		t.printSortprint(d);
+		t.printSortprint(s);
+		t.printSortprint(da);
 	}
-
+	
 	
 }

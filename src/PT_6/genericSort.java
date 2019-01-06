@@ -26,4 +26,10 @@ public class genericSort {
 			out += i.toString() +", ";
 		return out;
 	}
+	
+	public <T extends Comparable<T>> void printSortprint(T[] l) {
+		System.out.println(arrayToString(l));
+		sort(l);
+		System.out.println(arrayToString(l));
+	}
 }
